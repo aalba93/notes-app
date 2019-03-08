@@ -1,10 +1,8 @@
-const validator = require('validator');
+const chalk = require('chalk');
 const getNotes = require('./notes');
 
 const msg = getNotes();
 
 console.log(msg);
 
-// console.log(validator.isEmail('andresexample.com'));
-
-console.log(validator.isURL('example.com'));
+console.log(chalk.green.inverse.bold('Success!'));
